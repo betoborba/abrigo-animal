@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abrigo Animal JS</title>
+    <link rel="icon" type="image/png" href="assets/favicon-cat-imagem.png">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <img src="assets/programa-abrigo-aminal-js.png" alt="programa-abrigo-aminal-js" class="alta">
+    <h1>Programa Abrigo JS</h1>
+    <form>
+        <fieldset>
+        
+          <legend>Tipo de animal</legend>
+            <p><input type ="radio" name="inTipo" value="Felino" required>
+            <label for="inFelino">Felino</label>
+        
+            <input type ="radio" name="inTipo" value="Canino" required>
+        <label for="inCanino">Canino</label></p>
+
+            <legend>Porte</legend>
+            <p><input type ="radio" name="inPorte" value="Pequeno(a)" required>
+            <label for="inPequeno">Pequeno</label>
+        
+            <input type ="radio" name="inPorte" value="Médio" required>
+        <label for="inMedio">Medio</label>
+
+            <input type ="radio" name="inPorte" value="Grande" required>
+        <label for="inGrande">Grande</label></p>
+        
+        <p>Nome do animal:
+        <input type="text" id="inNome" required autofocus></p>
+       
+        <p>Idade:
+            <input type="number" id="inIdade" min="0" required>
+            <input type="submit" value="Adicionar">
+        </p>
+        <input type="button" value="Listar Todos" id="btListar">
+        <input type="button" value="Resumir por Idade" id="btResumir">
+        </fieldset>
+    </form>
+    <pre></pre>
+    <script src="js/script.js"></script>
+</body>
+</html>
